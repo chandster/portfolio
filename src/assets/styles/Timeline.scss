@@ -1,5 +1,7 @@
+@import 'variables';
+
 .vertical-timeline span {
-    color: white;
+    color: $primary-color;
     font-family: 'Courier Prime', monospace;
 }
 
@@ -24,11 +26,11 @@
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    color: $primary-color;
 }
 
 .svg-inline--fa {
-    color: white;
+    color: $primary-color;
 }
 
 @media screen and (max-width: 1170px) {

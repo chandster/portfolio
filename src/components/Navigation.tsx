@@ -15,9 +15,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
+import '../assets/styles/_variables.scss';
 
 const drawerWidth = 240;
-const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
+const navItems = [['Skills', 'my-skills'], ['History', 'history'], ['Projects', 'projects']];
 
 function Navigation({parentToChild, modeChange}: any) {
 
@@ -48,12 +49,12 @@ function Navigation({parentToChild, modeChange}: any) {
 
   const scrollToSection = (section: string) => {
     console.log(section)
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+    const elementToScrollTo = document.getElementById(section);
+    if (elementToScrollTo) {
+      elementToScrollTo.scrollIntoView({ behavior: 'smooth' });
+      console.log('Scrolling to:', elementToScrollTo);  // Debugging: Ensure the element is found
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error(`Element with id '${section}' not found`);  // Debugging: Log error if element is not found
     }
   };
 
@@ -64,7 +65,11 @@ function Navigation({parentToChild, modeChange}: any) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
+            <ListItemButton sx={{ 
+                textAlign: 'center',
+                '&:hover': { color: 'var(--nav-link-hover-color)' } 
+            }} 
+            onClick={() => scrollToSection(item[1])}>
               <ListItemText primary={item[0]} />
             </ListItemButton>
           </ListItem>

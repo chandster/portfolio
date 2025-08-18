@@ -1,3 +1,5 @@
+@import './assets/styles/variables';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,13 +26,17 @@ a {
 }
 
 a:hover {
-  color: #5000ca;
+  color: $link-hover-color;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-p, a, h1, h2, h3, h4, h5, label, button {
-  color: white;
+p, a, h1 {
+  color: $primary-color;
   font-family: "Lato", sans-serif;
+}
+
+label, button, h2, h3, h4, h5 {
+  color: $secondary-color
 }
 
 .navigation-bar {
@@ -99,21 +105,31 @@ p, a, h1, h2, h3, h4, h5, label, button {
     background-color: #f8f9fa;
   }
 
-  p, a, h1, h2, h3, h4, h5, label, button {
-    color: #0d1116;
+  .navigation-bar button {
+    color: $primary-color-light;
   }
 
-  a:hover {
-    color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  p, a, h1 {
+  color: $primary-color-light;
+  font-family: "Lato", sans-serif;
+}
+
+a:hover {
+  color: $link-hover-color;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+label, button, h2, h3, h4, h5 {
+  color: $secondary-color-light
+}
+
+  .about-section .headline {
+    color: $secondary-color-light
   }
+  
 
   .navigation-bar svg {
     color: #0d1116;
-  }
-
-  .about-section {
-    background-image: url("./assets/images/bg-light.png");
   }
 
   .skills-container svg {
