@@ -4,6 +4,7 @@ import hci from '../assets/images/hci.png';
 import skibidopoly from '../assets/images/skibidopoly.png';
 import playlist from '../assets/images/playlist-for-life.png';
 import glasgow from '../assets/images/explore-glasgow.png';
+import priceMunch from '../assets/images/price-munch.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -11,7 +12,13 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Projects</h1>
         <div className="projects-grid">
-            
+
+
+        <div className="project">
+                <a href="https://github.com/chandster/price-munch" target="_blank" rel="noreferrer"><img src={priceMunch} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/chandster/price-munch" target="_blank" rel="noreferrer"><h2>Price Munch</h2></a>
+                <p>Developed a web app that scrapes supermarket websites and lists the prices of products at different supermarkets, helping people get the best value for money on their groceries. My first time building with <a href="https://lovable.dev">Lovable</a>!</p>
+            </div>    
         <div className="project">
                 <a href="https://chromewebstore.google.com/detail/hawk-2-page-indexer/ahomfccdnfmnmomcapgjdmgpebjpcogg" target="_blank" rel="noreferrer"><img src={hawk2} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://chromewebstore.google.com/detail/hawk-2-page-indexer/ahomfccdnfmnmomcapgjdmgpebjpcogg" target="_blank" rel="noreferrer"><h2>Hawk 2 Chrome Extension</h2></a>
