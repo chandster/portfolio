@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1183e36e.css",
-    "main.js": "/portfolio/static/js/main.0aad71ad.js",
+    "main.css": "/portfolio/static/css/main.b8d2438b.css",
+    "main.js": "/portfolio/static/js/main.2bd53492.js",
+    "static/media/guorbit.png": "/portfolio/static/media/guorbit.57eb9403c453be004d7b.png",
     "static/media/explore-glasgow.png": "/portfolio/static/media/explore-glasgow.be03f199e0817387f947.png",
     "static/media/skibidopoly.png": "/portfolio/static/media/skibidopoly.7d75055e285eba440aa7.png",
     "static/media/playlist-for-life.png": "/portfolio/static/media/playlist-for-life.31800509b6eb948abe02.png",
     "static/media/hawk.png": "/portfolio/static/media/hawk.e6a8c3cb3299d9742fda.png",
-    "static/media/price-munch.png": "/portfolio/static/media/price-munch.dd0b33f26df28751f8fa.png",
     "static/media/hci.png": "/portfolio/static/media/hci.90fec380a17e6f6355b0.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.8eb917c3bc80675adfab.jpg",
+    "static/media/grammar-checker.png": "/portfolio/static/media/grammar-checker.0c581bbcf10ed8445e96.png",
     "index.html": "/portfolio/index.html",
-    "main.1183e36e.css.map": "/portfolio/static/css/main.1183e36e.css.map",
-    "main.0aad71ad.js.map": "/portfolio/static/js/main.0aad71ad.js.map"
+    "main.b8d2438b.css.map": "/portfolio/static/css/main.b8d2438b.css.map",
+    "main.2bd53492.js.map": "/portfolio/static/js/main.2bd53492.js.map"
   },
   "entrypoints": [
-    "static/css/main.1183e36e.css",
-    "static/js/main.0aad71ad.js"
+    "static/css/main.b8d2438b.css",
+    "static/js/main.2bd53492.js"
   ]
 }
