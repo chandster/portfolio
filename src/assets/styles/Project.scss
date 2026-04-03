@@ -21,6 +21,12 @@
     text-decoration: underline;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+
+.project img {
+    min-height: 350px;
+    max-height: 400px;
+    object-fit: cover;
+}
   
 .zoom {
     border-radius: 5px;
